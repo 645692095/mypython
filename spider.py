@@ -3,7 +3,7 @@
 @Version: 1.0
 @Author: mopin1
 @Date: 2019-11-22 12:10:46
-@LastEditTime: 2019-11-22 12:40:52
+@LastEditTime: 2019-11-22 17:30:42
 '''
 import winreg
 import requests
@@ -98,7 +98,7 @@ def main(i):
         print('数据收集完成！')
 
         if(draw(list1,list2)==1):      #绘图
-            print('饼状图已经绘好！')
+            print('颜色饼状图已经绘好！')
 
 if __name__=='__main__':
 
@@ -113,4 +113,3 @@ if __name__=='__main__':
     pages=100
     for i in range(pages):#爬取100页
         main(i)
-
