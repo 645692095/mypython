@@ -3,7 +3,7 @@
 @Version: 1.0
 @Author: mopin1
 @Date: 2019-11-22 12:10:46
-@LastEditTime: 2019-11-22 17:30:42
+@LastEditTime: 2019-11-22 20:19:41
 '''
 import winreg
 import requests
@@ -53,7 +53,7 @@ def draw(list1,list2):
     pie.set_series_opts(label_opts=opts.LabelOpts(formatter="{b}: {c}"))#图例显示（颜色+人数），例：亮黑色：46
     pie.set_colors(["lightblue", "black", "turquoise", "orangered", "lightpink"])
     pie.render(desktop+"\\jd.huaweiP30.html")
-    return 1
+    return True
 
 def main(i):
     
@@ -87,6 +87,7 @@ def main(i):
             red_color+=1
         elif element['productColor']=='珠光贝母':
             pearl_color+=1
+			
     print("第{}页完成！".format(i+1))
 
     if i==49:
@@ -97,7 +98,7 @@ def main(i):
         list2=[sky_color,black_color,aurora_color,red_color,pearl_color]
         print('数据收集完成！')
 
-        if(draw(list1,list2)==1):      #绘图
+        if(draw(list1,list2)):      #绘图
             print('颜色饼状图已经绘好！')
 
 if __name__=='__main__':
