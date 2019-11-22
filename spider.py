@@ -3,7 +3,7 @@
 @Version: 1.0
 @Author: mopin1
 @Date: 2019-11-22 12:10:46
-@LastEditTime: 2019-11-22 20:23:05
+@LastEditTime: 2019-11-22 20:26:56
 '''
 import winreg
 import requests
@@ -105,11 +105,11 @@ if __name__=='__main__':
 
     global sky_color,black_color,aurora_color,red_color,pearl_color
 
-    sky_color=0#天空之境
-    black_color=0#亮黑色
-    aurora_color=0#极光色
-    red_color=0#赤茶橘
-    pearl_color=0#珠光贝母
+    sky_color=0  #天空之境
+    black_color=0  #亮黑色
+    aurora_color=0  #极光色
+    red_color=0  #赤茶橘
+    pearl_color=0  #珠光贝母
     
     pages=100
 	
