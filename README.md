@@ -1,4 +1,4 @@
-# mypython:spider1.0.py --> spider2.0.py
+# mypython : spider1.0.py --> spider2.0.py
 
 通过对京东评论的爬取，了解大众对该产品的颜色偏好，绘制成图表
 
