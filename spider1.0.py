@@ -3,7 +3,7 @@
 @Version: 1.0
 @Author: mopin1
 @Date: 2019-11-22 12:10:46
-@LastEditTime: 2019-11-22 20:26:56
+@LastEditTime: 2019-11-22 21:14:58
 '''
 import winreg
 import requests
@@ -32,7 +32,7 @@ def get_page(url, headers):
 
 def write_to_file(content):
     fp=open(desktop+'\\jd.huaweiP30.json','w',encoding='utf-8')
-    print(content[26:-2],file=fp)#字符串写入文件
+    print(content[26:-2],file=fp)#字符串写入文件(2.0版已经改善此处)
     fp.close()
 
 def read_from_file():
