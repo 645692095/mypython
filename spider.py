@@ -3,7 +3,7 @@
 @Version: 1.0
 @Author: mopin1
 @Date: 2019-11-22 12:10:46
-@LastEditTime: 2019-11-22 20:19:41
+@LastEditTime: 2019-11-22 20:23:05
 '''
 import winreg
 import requests
@@ -112,5 +112,6 @@ if __name__=='__main__':
     pearl_color=0#珠光贝母
     
     pages=100
+	
     for i in range(pages):#爬取100页
         main(i)
